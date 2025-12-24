@@ -1,13 +1,46 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viktop</title>
-    <script type="module" crossorigin src="/assets/index-QleUwiUr.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-06pR9vDT.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player Full Page</title>
+    <style>
+        /* Убираем отступы и фиксируем размер страницы */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000; /* Черный фон для профессионального вида */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            /* 'contain' сохраняет пропорции видео целиком с черными полосами по бокам, 
+               если экран шире или выше видео. 
+               'cover' заполнит экран полностью, обрезав края. */
+            object-fit: contain; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <img src="Gemini_Generated_Image_qfa1aaqfa1aaqfa1.png" alt="">
+        <!-- <video controls>
+            <source src="20251224_1552_01kd86jdc9e4g83t4f80eq49fz.mp4" type="video/mp4">
+            Ваш браузер не поддерживает встроенные видео.
+        </video> -->
+    </div>
+
+</body>
 </html>
